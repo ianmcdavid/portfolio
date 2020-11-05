@@ -1,256 +1,564 @@
 /******======================== Base Styles ========================*****/
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
-
+  
 body {
-  color: #ffffff;
-  font-family: "thonburi";
-  font-size: 1em;
+    background-color: black;
+    color: #ffffff;
+    font-family: "thonburi";
+    font-size: 1em;
 }
 
 .content-wrapper {
-  width: 90%;
+    width: 90%;
 }
-
+  
 .full-width {
-  width: 100%;
-}
-
-.half-width {
-  width: 40%
-}
-
-.third-width {
-  width: 33.3%
+    width: 100%;
 }
 
 img {
-  border: 1px solid #fa0075;
+    border: 1px solid #fa0075;
 }
 
 h1 {
-  color: #fa0075;
-  font-family: "euphorigenic";
-  font-size: 5.625em;
-  font-weight: 500;
-  margin: 0;
-}
+    color: #fa0075;
+    font-family: "euphorigenic";
+    font-size: 2.8em;   
+    font-weight: 500;
+    margin: 0;
+  }
 
-h2 {
-  color: #fa0075;
-  font-family: "euphorigenic";
-  font-size: 3em;
-  margin:0;
-  padding-top: 30px;
-}
+  h2 {
+    color: #fa0075;
+    font-family: "euphorigenic";
+    font-size: 2.25em; 
+    margin:0;
+    padding-top: 10px; 
+  }  
 
-h3, li a{
-  color: #ffffff;
-  font-family: "thonburi";
-  font-size: 1.875em;
-  margin: 0;
-  text-decoration: none;
-}
+  h3, li a{
+    color: #ffffff;
+    font-family: "thonburi";
+    font-size: 1.15em;    
+    margin: 0;
+    text-decoration: none;
+  }  
 
-h4 {
-  color: #ffffff;
-  font-weight: bold;
-  margin: 0;
-}
-
-h4 a {
-  font-family: "helvetica neue";
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
-h5 {
-  color: #ffffff;
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 0;
-}
-
-a {
-  color: #ffffff;
-}
+  h4 a {
+    font-family: "helvetica neue";
+    font-size: 1.25em;      
+    text-decoration: none;
+  }
+  
+  h5 {
+    color: #ffffff;
+    font-size: 1.1em;       
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  a {
+    color: #ffffff;
+  }
 
 /*****============================== Header Styles ==============================*****/
 header {
-  align-items: center;
-  background-color: #1f202b;
-  display: flex;
-  justify-content: center;
-  height: 70px;
+    align-items: center;
+    background-color: #1f202b;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+  }
+
+  #head-wrap {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+header h3 {
+    text-align: center;
+    width: 100%;
 }
 
-#head-wrap {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.header-divider, #footer-divider {
+    width: 100%;
+    border-top: 1px solid #fa0075;
 }
+  nav {
+      display: flex;
+      width: 100%;
+      margin-top: 10px;
+  }
 
-nav ul{
-  display: flex;
-  flex-flow: row wrap;
-  list-style-type: none;
-}
+  nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 100%;
+    
+  }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-/*****========================== Hero Area Styles ================================*****/
-#hero-area {
-  background: url('../img/hero-background.png') center no-repeat;
-  height: 720px;
-}
-
-span {
-  color: #ffffff;
-}
-
-#hero-area h1{
-  padding: 155px 0 0 90px;
-}
+  /*****========================== Hero Area Styles ================================*****/
+  #hero-area {
+    background-image: url('../img/hero-background.png');
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  span {
+    color: #ffffff;
+  }
+  
+  #hero-area h1{
+    padding: 30px;
+  }
 
 /*****======================== Portfolio Styles ===================================*****/
 #work {
-  align-items: center;
-  background-color: #1f202b;  
-  display: flex;
-  flex-direction: column;
-  height: 1200px;
+    align-items: center;
+    background-color: #1f202b;  
+    display: flex;
+    flex-direction: column;
+    height: 1600px;
+  }
+  
+  #work-header {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #work-items {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    height: inherit;
+    width: 90%;
+  }
+  
+  article {
+    text-align: center;
+  }
+  
+  figure {
+    margin: 0;
+  }
+
+  figure a {
+      display: flex;
+      justify-content: center;
+  }
+  
+  figure a img {
+    height: 140px;
+    width: auto;
+  }
+  
+#blogress-img, #unplugged-img {
+    margin-top: 50px;
 }
 
-#work-header {
-  margin-bottom: 100px;
-  text-align: center;
-  width: 100%;
+#blogress-description h4, #unplugged-description h4{
+    margin-top: -180px;
+    margin-bottom: 180px;
 }
 
-#work-items {
-  align-items: flex-start;
-  display: flex;
-  flex-flow: row wrap;
-  height: inherit;
-  width: 88%;
+  #accelerate-description h4{
+    margin-bottom: 180px;
 }
 
-article {
-  display: flex;
-  justify-content: space-around;
+#accelerate-img {
+    margin-top: -420px;
 }
 
-figure {
-  margin: 0;
-}
-
-figure a img {
-  height: 220px;
-  width: auto;
-}
-
-#accelerate-description {
-  text-align: end;
+#unplugged {
+    margin-top: 280px;
 }
 
 /*****================================= About Me Styles =======================================*****/
 #about {
-  align-items: center;
-  background: url('../img/about-background1.jpg') center no-repeat;
-  background-color: black;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  height: 1200px;
-}
+    align-items: center;
+    background: url('../img/about-background1.jpg') center no-repeat;
+    background-color: black;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 1520px;
+  }
+  
+  #about-content {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-between;
+    padding: 10px 0 100px;
+    width: 80%;
+  }
+  
+  #about-description p {
+    line-height: 1.2em;
+  }
 
-#about-content {
-  display: flex;
-  flex-direction: column;
-  height: inherit;
-  justify-content: space-between;
-  padding: 20px 0 100px;
-  width: 80%;
-}
-
-#about-description p {
-  line-height: 1.2em;
-}
+  #hire {
+      padding: 180px 0 0;
+      
+  }
 
 /*****====================================== Footer Styles =======================================*****/
 footer {
-  align-items: center;
-  background-color: #1f202b;
-  display: flex;
-  flex-flow: column;
-  height: 450px;
+    align-items: center;
+    background-color: #1f202b;
+    display: flex;
+    flex-flow: column;
+    height: 450px;
+  }
+  
+  footer h2 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #foot-wrapper {  
+    width: 90%;
+  }
+  
+  #contact, #meet {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+  }
+  
+#hire-h4, #meet-h4 {
+    text-align: center;
+    width: 100%;
+}
+
+  #social {
+    text-align: center;
+  }
+  
+  #social-icons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  
+  #meet {
+    text-align: center;
+  }
+  
+  footer p a, #copyright p a {
+    text-transform: none;
+  }
+  
+  footer p a img{
+    border: 0;
+    height: 50px;
+  }  
+  
+  #copyright {
+    align-items: center;
+    background-color: #1f202b;
+    display: flex;
+    flex-flow: row wrap;
+    height: 5em;
+    justify-content: space-between;
+  }
+  
+  #copyright p {
+    font-size: .875em;
+    margin: 0 30px;
+  }
+  
+  #attribution {
+    font-size: .79em;
+  }
+
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width: 768px) {
+/*****************  General Styles ***********************/
+.content-wrapper {
+        width: 90%;
+}
+.half-width {
+     width: 49%
+}
+      
+.third-width {
+        width: 33.3%
+}
+
+h1 { 
+    font-size: 4.625em;  
+}
+  
+h2 {
+    font-size: 3em;
+    padding-top: 30px;
+}
+  
+  h3, li a{
+    font-size: 1.475em;
+}  
+    
+h4 a {
+    font-size: 1.25em;
+}
+  
+h5 {
+  font-size: 1.25em;
+}
+
+/*****============================== Header Styles ==============================*****/
+header {
+    height: 70px;
+  }
+  
+  header h3 {
+    text-align: start;
+    width: initial;
+  }
+  
+  .header-divider, #footer-divider {
+    width: 0;
+    border-top: none;
+  }
+  
+nav {
+    margin-top: 0;
+    width: initial;
+
+}
+  
+  nav ul{
+    width: initial;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+/*****========================== Hero Area Styles ================================*****/
+ 
+  #hero-area {
+    height: 520px;
+  }
+  
+  #hero-area h1{
+    padding: 55px 0 0 90px;
+  }
+  
+ /*****======================== Portfolio Styles ===================================*****/
+#work {
+    height: 1200px;
+  }
+  
+  #work-header {
+    margin-bottom: 80px;
+  }
+  
+  #work-items {
+    width: 88%;
+  }
+  
+  article {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: flex-start;
+  }
+
+  article p {
+    margin: 0 0 10px;
+  }
+  
+  figure a {
+    display: block;
+  }
+  
+  figure a img {
+    height: 160px;
+  }
+  
+  #blogress-img, #unplugged-img {
+    margin-top: 0px;
+  }
+  
+  #blogress-description h4, #unplugged-description h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #unplugged-description, #blogress-description {
+    text-align: start;
+  }
+  
+  #accelerate-description {
+      text-align: end;
+  }
+
+  #accelerate-description h4{
+    margin-bottom: 0px;
+  }
+  
+#accelerate-img a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+  #accelerate-img {
+    margin-top: 0px;
+  }
+
+  
+  #unplugged {
+    margin-top: 0px;
+  } 
+
+/*****================================= About Me Styles =======================================*****/
+#about {
+    height: 1200px;
+  }
+  
+  #about-content {
+    padding: 0 0 100px;
+  }
+
+#about-description h4 {
+    margin-top: 0;
+}  
+  
+  #hire {
+    padding: 0;
+  } 
+  
+/*****====================================== Footer Styles =======================================*****/
+
+footer {
+    height: 400px;
 }
 
 footer h2 {
-  text-align: center;
-  width: 100%;
-}
-
-footer h4 {
-  padding-bottom: 20px;
-}
-
-#foot-wrapper {
-  align-items: center;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height: inherit;
-  width: 86%;
-}
-
-#contact {
-  text-align: center;
-}
-
-#social {
-  text-align: center;
-}
+    text-align: start;
+    width: initial;
+  }
+  
+  footer h4 {
+    padding-bottom: 20px;
+  }
+  
+  #foot-wrapper {
+    align-items: center;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: inherit;
+    width: 86%;
+  }
+  
+  #contact, #meet {
+    text-align: center;
+    display: block;
+  }
+  
+  #hire-h4, #meet-h4 {
+    width: initial;
+  }  
 
 #social-icons {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 30px;
-}
-
-#meet {
-  text-align: center;
-}
-
-footer p a, #copyright p a {
-  text-transform: none;
-}
-
-footer p a img{
-  border: 0;
-  height: 50px;
+    padding: 0;
 }
 
 #copyright {
-  align-items: center;
-  background-color: #1f202b;
-  display: flex;
-  flex-flow: row wrap;
-  height: 2.5em;
-  justify-content: space-between;
+    height: 2.5em;  
+  }
+  
+  #copyright p {
+    margin: 0 40px;
+  }
 }
 
-#copyright p {
-  font-size: .875em;
-  margin: 0 40px;
-}
 
-#attribution {
-  font-size: .79em;
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width: 1200px) {
+ /******************* General Styles ***************************/
+ .half-width {
+    width: 50%
+  }
+h1 { 
+    font-size: 5.625em;  
+}
+  h3, li a{
+    font-size: 1.875em;
+  }
+  
+h4 a {
+    font-size: 1.5em;  
+  }
+  
+  h5 {
+    font-size: 1.5em;
+  }
+
+  /*****========================== Hero Area Styles ================================*****/
+  #hero-area {
+    height: 720px;
+  }
+  
+  #hero-area h1{
+    padding: 155px 0 0 90px;
+  }
+
+  /*****======================== Portfolio Styles ===================================*****/
+  #work {
+    align-items: center;
+    background-color: #1f202b;  
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+  }
+  
+  #work-header {
+    margin-bottom: 100px;
+  }
+    
+  figure a img {
+    height: 220px;
+  }
+  /*****================================= About Me Styles =======================================*****/
+  #about-content {
+    padding: 20px 0 100px;
+  }
+  /*****====================================== Footer Styles =======================================*****/
+  footer {
+    height: 450px;
+  }
+    
+  #social-icons {
+    padding: 0 30px;
+  }
+  
+  #meet {
+    text-align: center;
+  }
+  
+  footer p a, #copyright p a {
+    text-transform: none;
+  }
+  
+  footer p a img{
+    border: 0;
+    height: 50px;
+  }
+
 }
