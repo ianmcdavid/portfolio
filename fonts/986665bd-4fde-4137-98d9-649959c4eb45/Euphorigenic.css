@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Euphorigenic';
+    src: url('fonts/euphorigenic.eot');
+    src: url('fonts/euphorigenic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/euphorigenic.woff2') format('woff2'),
+         url('fonts/euphorigenic.woff') format('woff'),
+         url('fonts/euphorigenic.ttf')  format('truetype'),
+         url('fonts/euphorigenic.svg#Euphorigenic') format('svg');
+}

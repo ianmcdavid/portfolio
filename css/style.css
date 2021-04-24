@@ -1,4 +1,11 @@
 /******======================== Base Styles ========================*****/
+@font-face{ 
+	font-family: 'euphorigenic';
+  src: url('euphorigenic.woff2') format('woff2'), 
+       url('euphorigenic.woff') format('woff'),
+	     url('euphorigenic.ttf') format('truetype');
+}
+
 html {
     font-size: 16px;
 }
@@ -22,7 +29,7 @@ img {
     border: 1px solid #fa0075;
 }
 
-h1 {
+h3 {
     color: #fa0075;
     font-family: "euphorigenic";
     font-size: 2.8em;   
@@ -33,34 +40,39 @@ h1 {
   h2 {
     color: #fa0075;
     font-family: "euphorigenic";
-    font-size: 2.25em; 
+    font-size: 2.8em; 
     margin:0;
     padding-top: 10px; 
   }  
 
-  h3, li a{
+  h1, li a{
     color: #ffffff;
     font-family: "thonburi";
-    font-size: 1.15em;    
+    font-size: 1.25em;    
     margin: 0;
     text-decoration: none;
   }  
 
-  h4 a {
+  h4 a, h4 {
     font-family: "helvetica neue";
-    font-size: 1.25em;      
+    font-size: 1.4em;      
     text-decoration: none;
   }
   
   h5 {
     color: #ffffff;
-    font-size: 1.1em;       
+    font-size: 1.25em;       
     font-weight: 500;
     margin: 0;
   }
   
   a {
     color: #ffffff;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 0 5%;
   }
 
 /*****============================== Header Styles ==============================*****/
@@ -79,7 +91,7 @@ header {
     justify-content: space-between;
   }
 
-header h3 {
+header h1 {
     text-align: center;
     width: 100%;
 }
@@ -116,7 +128,7 @@ header h3 {
     color: #ffffff;
   }
   
-  #hero-area h1{
+  #hero-area h3{
     padding: 30px;
   }
 
@@ -126,7 +138,7 @@ header h3 {
     background-color: #1f202b;  
     display: flex;
     flex-direction: column;
-    height: 1600px;
+    height: auto;
   }
   
   #work-header {
@@ -135,20 +147,15 @@ header h3 {
     width: 100%;
   }
   
-  #work-items {
-    align-items: flex-start;
-    display: flex;
-    flex-flow: row wrap;
-    height: inherit;
-    width: 90%;
-  }
+ 
   
   article {
     text-align: center;
   }
   
   figure {
-    margin: 0;
+    margin: 50px 5% 0;
+    
   }
 
   figure a {
@@ -157,59 +164,45 @@ header h3 {
   }
   
   figure a img {
-    height: 140px;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
   
-#blogress-img, #unplugged-img {
-    margin-top: 50px;
+#item3-description p {
+    margin-bottom: 5%;
 }
 
-#blogress-description h4, #unplugged-description h4{
-    margin-top: -180px;
-    margin-bottom: 180px;
+#work-items article p {
+  text-align: left;
 }
 
-  #accelerate-description h4{
-    margin-bottom: 180px;
-}
 
-#accelerate-img {
-    margin-top: -420px;
-}
-
-#unplugged {
-    margin-top: 280px;
-}
 
 /*****================================= About Me Styles =======================================*****/
 #about {
-    align-items: center;
-    background: url('../img/about-background1.jpg') center no-repeat;
     background-color: black;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    height: 1520px;
+    height: auto;
+    text-align: center;
   }
   
-  #about-content {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    justify-content: space-between;
-    padding: 10px 0 100px;
-    width: 80%;
-  }
-  
-  #about-description p {
-    line-height: 1.2em;
+  #about h2 {
+    text-align: center;
   }
 
-  #hire {
-      padding: 180px 0 0;
-      
+  #about-content {
+    
+    height: inherit;
+    
+    padding: 5%;
   }
+  
+  #about-description p, #about-me p {
+    line-height: 1.2em;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+
+
 
 /*****====================================== Footer Styles =======================================*****/
 footer {
@@ -217,7 +210,7 @@ footer {
     background-color: #1f202b;
     display: flex;
     flex-flow: column;
-    height: 450px;
+    height: auto;
   }
   
   footer h2 {
@@ -229,14 +222,17 @@ footer {
     width: 90%;
   }
   
-  #contact, #meet {
+  #contact {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
   }
   
-#hire-h4, #meet-h4 {
+  #contact p {
+    margin-bottom: 1em;
+  }
+
+#hire-h4 {
     text-align: center;
     width: 100%;
 }
@@ -249,12 +245,12 @@ footer {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 30px;
   }
   
-  #meet {
-    text-align: center;
+  #social-icons p {
+    margin: 0 10% 5%;
   }
   
   footer p a, #copyright p a {
@@ -270,14 +266,14 @@ footer {
     align-items: center;
     background-color: #1f202b;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     height: 5em;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   #copyright p {
     font-size: .875em;
-    margin: 0 30px;
+    margin: 0 1em;
   }
   
   #attribution {
@@ -287,28 +283,25 @@ footer {
 
 /* ----------- Tablets larger than 768px wide ----------- */
 @media (min-width: 768px) {
-/*****************  General Styles ***********************/
+/*****************  General Styles Tablet***********************/
 .content-wrapper {
         width: 90%;
 }
-.half-width {
-     width: 49%
-}
       
 .third-width {
-        width: 33.3%
+        width: 50%
 }
 
-h1 { 
+h3 { 
     font-size: 4.625em;  
 }
   
 h2 {
     font-size: 3em;
-    padding-top: 30px;
+    padding-top: 5%;
 }
   
-  h3, li a{
+  h1, li a{
     font-size: 1.475em;
 }  
     
@@ -320,12 +313,12 @@ h5 {
   font-size: 1.25em;
 }
 
-/*****============================== Header Styles ==============================*****/
+/*****============================== Header Styles Tablet==============================*****/
 header {
     height: 70px;
   }
   
-  header h3 {
+  header h1 {
     text-align: start;
     width: initial;
   }
@@ -348,35 +341,39 @@ nav {
   nav ul li {
     margin-left: 20px;
   }
-/*****========================== Hero Area Styles ================================*****/
+/*****========================== Hero Area Styles Tablet================================*****/
  
   #hero-area {
     height: 520px;
   }
   
-  #hero-area h1{
+  #hero-area h3{
     padding: 55px 0 0 90px;
   }
   
- /*****======================== Portfolio Styles ===================================*****/
-#work {
-    height: 1200px;
-  }
-  
+ /*****======================== Portfolio Styles Tablet===================================*****/
   #work-header {
     margin-bottom: 80px;
   }
   
-  #work-items {
-    width: 88%;
-  }
   
-  article {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    text-align: flex-start;
+    #work-items {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row wrap;
+      height: inherit;
+      width: 88%;
+    }
+  
+  .subhead {
+    margin: 1em 5% 10%;
   }
+
+  .subhead h4, .subhead h5 {
+    text-align: center;
+  }
+
+
 
   article p {
     margin: 0 0 10px;
@@ -386,53 +383,36 @@ nav {
     display: block;
   }
   
-  figure a img {
-    height: 160px;
-  }
-  
-  #blogress-img, #unplugged-img {
+  #item1-img, #item3-img {
     margin-top: 0px;
   }
   
-  #blogress-description h4, #unplugged-description h4{
+  #item1-description h4, #item3-description h4{
     margin-top: 0px;
     margin-bottom: 0px;
   }
   
-  #unplugged-description, #blogress-description {
-    text-align: start;
-  }
-  
-  #accelerate-description {
-      text-align: end;
-  }
 
-  #accelerate-description h4{
+
+  #item2-description h4{
     margin-bottom: 0px;
   }
   
-#accelerate-img a {
+#item2-img a {
     display: flex;
     justify-content: flex-end;
 }
 
-  #accelerate-img {
+  #item2-img {
     margin-top: 0px;
   }
 
   
-  #unplugged {
+  #item3 {
     margin-top: 0px;
   } 
 
-/*****================================= About Me Styles =======================================*****/
-#about {
-    height: 1200px;
-  }
-  
-  #about-content {
-    padding: 0 0 100px;
-  }
+/*****================================= About Me Styles Tablet=======================================*****/
 
 #about-description h4 {
     margin-top: 0;
@@ -442,11 +422,7 @@ nav {
     padding: 0;
   } 
   
-/*****====================================== Footer Styles =======================================*****/
-
-footer {
-    height: 400px;
-}
+/*****====================================== Footer Styles Tablet=======================================*****/
 
 footer h2 {
     text-align: start;
@@ -458,7 +434,6 @@ footer h2 {
   }
   
   #foot-wrapper {
-    align-items: center;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -466,12 +441,16 @@ footer h2 {
     width: 86%;
   }
   
-  #contact, #meet {
+  #contact  {
     text-align: center;
     display: block;
   }
+
+  #contact:nth-child(2){
+    margin-bottom: 1em;
+  }
   
-  #hire-h4, #meet-h4 {
+  #hire-h4 {
     width: initial;
   }  
 
@@ -480,7 +459,8 @@ footer h2 {
 }
 
 #copyright {
-    height: 2.5em;  
+    height: 2.5em;
+     
   }
   
   #copyright p {
@@ -491,14 +471,15 @@ footer h2 {
 
 /* ----------- Monitors larger than 1200px wide ----------- */
 @media (min-width: 1200px) {
- /******************* General Styles ***************************/
+ /******************* General Styles Desktop***************************/
  .half-width {
-    width: 50%
+    width: 44%;
+    
   }
-h1 { 
+h3 { 
     font-size: 5.625em;  
 }
-  h3, li a{
+  h1, li a{
     font-size: 1.875em;
   }
   
@@ -510,38 +491,55 @@ h4 a {
     font-size: 1.5em;
   }
 
-  /*****========================== Hero Area Styles ================================*****/
+  /*****========================== Hero Area Styles Desktop================================*****/
   #hero-area {
     height: 720px;
   }
   
-  #hero-area h1{
+  #hero-area h3{
     padding: 155px 0 0 90px;
   }
 
-  /*****======================== Portfolio Styles ===================================*****/
+  /*****======================== Portfolio Styles Desktop===================================*****/
   #work {
-    align-items: center;
-    background-color: #1f202b;  
-    display: flex;
-    flex-direction: column;
-    height: 1200px;
+    
   }
   
   #work-header {
     margin-bottom: 100px;
   }
-    
-  figure a img {
-    height: 220px;
+
+  #item1, #item3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
   }
-  /*****================================= About Me Styles =======================================*****/
+
+  #item2 {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start;
+  }
+  
+  .subhead {
+    margin: 0 0 10%;
+  }
+
+  .subhead h4 {
+    margin-top: 0;
+  }
+  
+  /*****================================= About Me Styles Desktop=======================================*****/
   #about-content {
     padding: 20px 0 100px;
   }
-  /*****====================================== Footer Styles =======================================*****/
-  footer {
-    height: 450px;
+
+  #about-description h4, #about-me h4 {
+    margin-bottom: 0;
+  }
+  /*****====================================== Footer Styles Desktop=======================================*****/
+  footer h4 {
+    font-size: 2.1em;
   }
     
   #social-icons {
@@ -550,6 +548,10 @@ h4 a {
   
   #meet {
     text-align: center;
+  }
+
+  #contact p {
+    margin-bottom: 1em;
   }
   
   footer p a, #copyright p a {
