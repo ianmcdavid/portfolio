@@ -56,7 +56,8 @@ h3 {
   h4 a, h4 {
     font-family: "helvetica neue";
     font-size: 1.4em;      
-    text-decoration: none;
+    text-decoration-color: #fa0075;
+    text-decoration-thickness: 2px;
   }
   
   h5 {
@@ -71,7 +72,8 @@ h3 {
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.25em;
+    line-height: 1.25em;
     margin: 0 5%;
   }
 
@@ -168,11 +170,11 @@ header h1 {
     width: 100%;
   }
   
-#item3-description p {
+#item5-description p {
     margin-bottom: 5%;
 }
 
-#work-items article p {
+.left p, .right p {
   text-align: left;
 }
 
@@ -189,6 +191,12 @@ header h1 {
     text-align: center;
   }
 
+  #about img {
+    height: 300px;
+    margin-bottom: 20px;
+    
+  }
+
   #about-content {
     
     height: inherit;
@@ -196,13 +204,16 @@ header h1 {
     padding: 5%;
   }
   
-  #about-description p, #about-me p {
+  #about-pro p, #about-me p {
     line-height: 1.2em;
     text-align: left;
     margin-bottom: 1em;
   }
 
-
+  #hire {
+    border-top: solid #fa0075;
+    padding-top: 20px;
+  }
 
 /*****====================================== Footer Styles =======================================*****/
 footer {
@@ -223,22 +234,21 @@ footer {
   }
   
   #contact {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
   }
   
   #contact p {
     margin-bottom: 1em;
+    font-size: 1.25em;
   }
-
-#hire-h4 {
-    text-align: center;
-    width: 100%;
-}
 
   #social {
     text-align: center;
+  }
+
+  #social h5 {
+    margin-bottom: 1em;
   }
   
   #social-icons {
@@ -383,44 +393,54 @@ nav {
     display: block;
   }
   
-  #item1-img, #item3-img {
+  #item1-img, #item3-img, #item5-img {
     margin-top: 0px;
   }
   
-  #item1-description h4, #item3-description h4{
+  #item1-description h4, #item3-description h4, #item5-description h4{
     margin-top: 0px;
     margin-bottom: 0px;
   }
   
 
 
-  #item2-description h4{
+  #item2-description h4, #item4-description h4{
     margin-bottom: 0px;
   }
   
-#item2-img a {
+#item2-img a, #item4-img a {
     display: flex;
     justify-content: flex-end;
 }
 
-  #item2-img {
+  #item2-img, #item4-img {
     margin-top: 0px;
   }
 
   
-  #item3 {
+  #item5 {
     margin-top: 0px;
   } 
 
 /*****================================= About Me Styles Tablet=======================================*****/
 
-#about-description h4 {
-    margin-top: 0;
-}  
-  
-  #hire {
-    padding: 0;
-  } 
+#about-description {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+#headshot {
+  margin-right: 5%;
+}
+
+#about-me {
+  margin-left: 5%;
+}
+
+#about-me p {
+  line-height: 1.4em;
+}
   
 /*****====================================== Footer Styles Tablet=======================================*****/
 
@@ -450,9 +470,9 @@ footer h2 {
     margin-bottom: 1em;
   }
   
-  #hire-h4 {
-    width: initial;
-  }  
+  #social h5 {
+    margin-top: 20px;
+  } 
 
 #social-icons {
     padding: 0;
@@ -501,34 +521,42 @@ h4 a {
   }
 
   /*****======================== Portfolio Styles Desktop===================================*****/
-  #work {
-    
-  }
-  
   #work-header {
     margin-bottom: 100px;
   }
 
-  #item1, #item3 {
+  #item1, #item3, #item5 {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
   }
 
-  #item2 {
+  #item2, #item4 {
     display: flex;
     flex-flow: row-reverse wrap;
     align-items: flex-start;
   }
   
   .subhead {
-    margin: 0 0 10%;
+    margin: 20px 0 10%;
   }
 
   .subhead h4 {
     margin-top: 0;
   }
+
+  .subhead h4, .subhead h5 {
+    text-align: left;
+  }
   
+  .left h4, .left h5, .left p {
+    text-align: right;
+  }
+
+  #item5-img {
+    margin-bottom: 5%;
+  }
+
   /*****================================= About Me Styles Desktop=======================================*****/
   #about-content {
     padding: 20px 0 100px;
@@ -552,6 +580,7 @@ h4 a {
 
   #contact p {
     margin-bottom: 1em;
+    font-size: 1.5em;
   }
   
   footer p a, #copyright p a {
