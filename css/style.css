@@ -1,11 +1,4 @@
 /******======================== Base Styles ========================*****/
-@font-face{ 
-	font-family: 'euphorigenic';
-  src: url('euphorigenic.woff2') format('woff2'), 
-       url('euphorigenic.woff') format('woff'),
-	     url('euphorigenic.ttf') format('truetype');
-}
-
 html {
     font-size: 16px;
 }
@@ -30,30 +23,32 @@ img {
 }
 
 h3 {
-    color: #FFFFFF;
-    font-family: "euphorigenic";
-    font-size: 2.8em;   
+    color: #0600ff;
+    font-family: "helvetica neue";
+    font-size: 6vw;   
     font-weight: 500;
-    margin: 0;
+    margin: 12vw 0 0 0;
   }
 
   h2 {
     color: #0600FF;
-    font-family: "euphorigenic";
+    font-family: "montserrat";
     font-size: 2.8em; 
     margin:0;
-    padding-top: 10px; 
+    margin-top: 10px; 
   }  
 
   h1, li a{
     color: #ffffff;
-    font-family: "thonburi";
-    font-size: 1.25em;    
+    font-family: "montserrat";
+    font-size: 1.25em; 
+    letter-spacing: 2px;   
     margin: 0;
     text-decoration: none;
   }  
 
   h4 a, h4 {
+    color: black;
     font-family: "helvetica neue";
     font-size: 1.4em;      
     text-decoration-color: #0600FF;
@@ -61,7 +56,7 @@ h3 {
   }
   
   h5 {
-    color: #ffffff;
+    color: black;
     font-size: 1.25em;       
     font-weight: 500;
     margin: 0;
@@ -75,6 +70,7 @@ h3 {
     font-size: 1.25em;
     line-height: 1.25em;
     margin: 0 5%;
+    color: black;
   }
 
 /*****============================== Header Styles ==============================*****/
@@ -120,18 +116,21 @@ header h1 {
 
   /*****========================== Hero Area Styles ================================*****/
   #hero-area {
-    background-image: url('../img/hero-background.png');
+    background-image: url('../img/hero.jpg');
     background-position: center;
     background-size: cover;
     height: 350px;
-  }
-  
-  span {
-    color: #0600FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   #hero-area h3{
-    padding: 30px;
+    padding-bottom: 20px;
+  }
+
+  #hero-area p{
+    font-size: 2vw;
   }
 
 /*****======================== Portfolio Styles ===================================*****/
@@ -191,6 +190,9 @@ header h1 {
     text-align: center;
   }
 
+  #about p {
+    color: white;
+  }
   #about img {
     height: 300px;
     margin-bottom: 20px;
@@ -229,6 +231,10 @@ footer {
     width: 100%;
   }
   
+  footer p, footer h5, #copyright p {
+    color: white;
+  }
+
   #foot-wrapper {  
     width: 90%;
   }
@@ -303,7 +309,7 @@ footer {
 }
 
 h3 { 
-    font-size: 4.625em;  
+   /* font-size: 4.625em;  */
 }
   
 h2 {
@@ -358,7 +364,7 @@ nav {
   }
   
   #hero-area h3{
-    padding: 55px 0 0 90px;
+   /* padding: 55px 0 0 90px; */
   }
   
  /*****======================== Portfolio Styles Tablet===================================*****/
@@ -497,7 +503,7 @@ footer h2 {
     
   }
 h3 { 
-    font-size: 5.625em;  
+  /*  font-size: 5.625em; */ 
 }
   h1, li a{
     font-size: 1.875em;
@@ -517,7 +523,7 @@ h4 a {
   }
   
   #hero-area h3{
-    padding: 155px 0 0 90px;
+   /* padding: 155px 0 0 90px; */
   }
 
   /*****======================== Portfolio Styles Desktop===================================*****/
