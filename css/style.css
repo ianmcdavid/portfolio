@@ -130,7 +130,7 @@ header h1 {
   }
 
   #hero-area p{
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
 /*****======================== Portfolio Styles ===================================*****/
@@ -177,6 +177,43 @@ header h1 {
   text-align: left;
 }
 
+/*****================================= Skills Styles =========================================*****/
+#skills {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#skills-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 1em;
+}
+
+#skills-icons article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13vw;
+  padding: 1em 0;
+}
+
+.font-awesome-icon {
+  color: #0600FF;
+  font-size: 2em;
+}
+
+.skill-description {
+  font-size: 1.2em;
+}
 
 
 /*****================================= About Me Styles =======================================*****/
