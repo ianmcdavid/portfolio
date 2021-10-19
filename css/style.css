@@ -151,11 +151,20 @@ header h1 {
   
   article {
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
   }
   
+  .image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+  }
+
   figure {
-    margin: 50px 5% 0;
-    
+    margin: 0;
+    width: 100%;
   }
 
   figure a {
@@ -166,8 +175,29 @@ header h1 {
   figure a img {
     height: auto;
     width: 100%;
+    max-width: 468px;
+    max-height: 228px;
   }
   
+  .button {
+    background: #ffffff;
+    border: 2px solid #0600FF;
+    color: #0600FF;
+    width: 30%;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  
+
+  .button:hover {
+    background: #0600FF;
+    color: #ffffff;
+  }
+
+  
+
 #item5-description p {
     margin-bottom: 5%;
 }
@@ -242,6 +272,8 @@ header h1 {
     padding: 5%;
   }
   
+  
+
   #about-pro p, #about-me p {
     line-height: 1.2em;
     text-align: left;
@@ -344,10 +376,6 @@ footer {
 .third-width {
         width: 50%
 }
-
-h3 { 
-   /* font-size: 4.625em;  */
-}
   
 h2 {
     font-size: 3em;
@@ -419,7 +447,7 @@ nav {
     }
   
   .subhead {
-    margin: 1em 5% 10%;
+    margin: 0 5%;
   }
 
   .subhead h4, .subhead h5 {
@@ -450,11 +478,6 @@ nav {
   #item2-description h4, #item4-description h4{
     margin-bottom: 0px;
   }
-  
-#item2-img a, #item4-img a {
-    display: flex;
-    justify-content: flex-end;
-}
 
   #item2-img, #item4-img {
     margin-top: 0px;
@@ -489,6 +512,10 @@ nav {
 #about-me p {
   line-height: 1.4em;
 }
+
+#about-pro p {
+  padding: 0 3%;
+  }
   
 /*****====================================== Footer Styles Tablet=======================================*****/
 
@@ -539,9 +566,7 @@ footer h2 {
     width: 44%;
     
   }
-h3 { 
-  /*  font-size: 5.625em; */ 
-}
+
   h1, li a{
     font-size: 1.875em;
   }
@@ -557,10 +582,6 @@ h4 a {
   /*****========================== Hero Area Styles Desktop================================*****/
   #hero-area {
     height: 720px;
-  }
-  
-  #hero-area h3{
-   /* padding: 155px 0 0 90px; */
   }
 
   /*****======================== Portfolio Styles Desktop===================================*****/
@@ -608,6 +629,10 @@ h4 a {
   #about-description h4, #about-me h4 {
     margin-bottom: 0;
   }
+
+  #about-pro p {
+    padding: 0 4%;
+    }
   /*****====================================== Footer Styles Desktop=======================================*****/
   footer h4 {
     font-size: 2.1em;
